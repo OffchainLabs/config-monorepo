@@ -49,6 +49,6 @@ npx install-peerdeps --dev @arbitrum/prettier-config
 
 ```ts
 module.exports = {
-  extends: ["@arbitrum/eslint-config-typescript/typescript"],
+  extends: ["@arbitrum/prettier-config"],
 };
 ```
