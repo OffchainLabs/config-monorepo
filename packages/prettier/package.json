@@ -2,7 +2,7 @@
   "name": "@arbitrum/prettier-config",
   "version": "1.0.0",
   "description": "Shareable Offchain labs prettier config",
-  "main": "./index.js",
+  "main": "index.js",
   "author": "Offchain Labs, Inc.",
   "license": "MIT",
   "peerDependencies": {
