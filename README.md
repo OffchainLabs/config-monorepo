@@ -5,8 +5,8 @@ Provide reusable typescript and react eslint configs
 1. Install the peerDependencies of eslint configs:
 
 ```sh
-npx install-peerdeps --dev @arbitrum/eslint-config-airbnb/typescript
-npx install-peerdeps --dev @arbitrum/eslint-config-airbnb/react
+npx install-peerdeps --dev @arbitrum/eslint-config-typescript/typescript
+npx install-peerdeps --dev @arbitrum/eslint-config-typescript/react
 ```
 
 2. Usage
