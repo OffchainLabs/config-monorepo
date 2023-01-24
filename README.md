@@ -5,7 +5,7 @@ Provide reusable typescript and react eslint configs
 1. Install the peerDependencies of eslint configs:
 
 ```sh
-npx install-peerdeps --dev @arbitrum/eslint-config-typescript/typescript
+npx install-peerdeps --dev @arbitrum/eslint-config-typescript/base
 npx install-peerdeps --dev @arbitrum/eslint-config-typescript/react
 ```
 
@@ -14,7 +14,7 @@ npx install-peerdeps --dev @arbitrum/eslint-config-typescript/react
 ```ts
 module.exports = {
   extends: [
-    "@arbitrum/eslint-config-typescript/typescript",
+    "@arbitrum/eslint-config-typescript/base",
     "@arbitrum/eslint-config-typescript/react",
   ],
   // If needed, you can override with:

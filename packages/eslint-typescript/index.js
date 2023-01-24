@@ -1,2 +1,2 @@
-export { typescript } from './typescript';
+export { base } from './base';
 export { react } from './react';
