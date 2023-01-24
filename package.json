@@ -1,0 +1,12 @@
+{
+  "name": "arb-config",
+  "version": "1.0.0",
+  "description": "Shareable Offchain labs eslint and prettier config",
+  "main": "index.js",
+  "author": "Offchain Labs, Inc.",
+  "type": "module",
+  "license": "MIT",
+  "workspaces": [
+    "./packages/*"
+  ]
+}
