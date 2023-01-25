@@ -1,5 +1,5 @@
 {
-  "name": "@arbitrum/prettier-config",
+  "name": "@offchainlabs/prettier-config",
   "version": "1.0.0",
   "description": "Shareable Offchain labs prettier config",
   "main": "index.js",

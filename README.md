@@ -5,8 +5,8 @@ Provide reusable typescript and react eslint configs
 1. Install the peerDependencies of eslint configs:
 
 ```sh
-npx install-peerdeps --dev @arbitrum/eslint-config-typescript/base
-npx install-peerdeps --dev @arbitrum/eslint-config-typescript/react
+npx install-peerdeps --dev @offchainlabs/eslint-config-typescript/base
+npx install-peerdeps --dev @offchainlabs/eslint-config-typescript/react
 ```
 
 2. Usage
@@ -14,8 +14,8 @@ npx install-peerdeps --dev @arbitrum/eslint-config-typescript/react
 ```ts
 module.exports = {
   extends: [
-    "@arbitrum/eslint-config-typescript/base",
-    "@arbitrum/eslint-config-typescript/react",
+    "@offchainlabs/eslint-config-typescript/base",
+    "@offchainlabs/eslint-config-typescript/react",
   ],
   // If needed, you can override with:
   overrides: [
@@ -42,13 +42,13 @@ Provide reusable prettier config
 1. Install the peerDependencies of prettier config:
 
 ```sh
-npx install-peerdeps --dev @arbitrum/prettier-config
+npx install-peerdeps --dev @offchainlabs/prettier-config
 ```
 
 2. Usage
 
 ```ts
 module.exports = {
-  extends: ["@arbitrum/prettier-config"],
+  extends: ["@offchainlabs/prettier-config"],
 };
 ```
