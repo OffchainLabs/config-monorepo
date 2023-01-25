@@ -1,6 +1,7 @@
 {
   "name": "offchain-labs-config",
   "version": "1.0.0",
+  "private": true,
   "description": "Shareable Offchain labs eslint and prettier config",
   "main": "index.js",
   "author": "Offchain Labs, Inc.",
