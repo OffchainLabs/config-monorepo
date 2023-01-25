@@ -34,21 +34,3 @@ This repo can be linted with itself by running `yarn run lint`
 ```sh
 yarn run lint
 ```
-
-# Prettier
-
-Provide reusable prettier config
-
-1. Install the peerDependencies of prettier config:
-
-```sh
-npx install-peerdeps -Y --dev @offchainlabs/prettier-config
-```
-
-2. Usage
-
-```ts
-module.exports = {
-  extends: ["@offchainlabs/prettier-config"],
-};
-```
