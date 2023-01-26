@@ -57,6 +57,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@offchainlabs/prettier-config@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@offchainlabs/prettier-config/-/prettier-config-0.2.0.tgz#7b349a94772655ccca366c43d639839ad5267be4"
+  integrity sha512-6ArtT+Uwin/EjNJk3+KQ+zbl2pWwvCSifjy1NfQa/seOsRwJNiRywjBA6EXEXc+om/MMCNwc8t1MaxFBDpaMXw==
+
 "@types/json-schema@^7.0.9":
   version "7.0.11"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
