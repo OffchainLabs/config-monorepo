@@ -5,8 +5,7 @@ Provide reusable typescript and react eslint configs
 1. Install the peerDependencies of eslint configs:
 
 ```sh
-npx install-peerdeps -Y --dev @offchainlabs/eslint-config-typescript/base
-npx install-peerdeps -Y --dev @offchainlabs/eslint-config-typescript/react
+npx install-peerdeps -Y --dev @offchainlabs/eslint-config-typescript
 ```
 
 2. Usage

@@ -15,7 +15,6 @@ You can extend the configuration in your project:
 `package.json:`
 
 ```JSON
-package.json
 "prettier": "@offchainlabs/prettier-config"
 ```
 
