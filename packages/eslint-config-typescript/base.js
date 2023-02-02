@@ -15,6 +15,7 @@ const base = {
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off', // allow type inference for function return type
     '@typescript-eslint/member-delimiter-style': ['off'],
+    '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': ['warn'],
     '@typescript-eslint/no-non-null-assertion': ['off'],
     '@typescript-eslint/no-unused-vars': 'error',
