@@ -25,6 +25,7 @@ const base = {
     'object-curly-spacing': ['error', 'always'],
     'prefer-const': [2, { destructuring: 'all' }],
     'prettier/prettier': ['error', { singleQuote: true }],
+    'no-await-in-loop': 'error',
     '@typescript-eslint/ban-ts-comment': [
       'error',
       {
