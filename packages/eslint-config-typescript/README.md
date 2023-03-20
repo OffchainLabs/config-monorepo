@@ -62,4 +62,9 @@ rules:
 }
 ```
 
+## Note
+
+For nextjs based project,
+`"@offchainlabs/eslint-config-typescript/react"` should be removed in favor of `"@offchainlabs/eslint-config-typescript/next",`. It includes `react`, `react-hooks`, `jsx-a11y` and `import` configurations already.
+
 This repo can be linted with itself by running `yarn run lint`
