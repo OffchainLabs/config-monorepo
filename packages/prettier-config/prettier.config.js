@@ -6,6 +6,8 @@ const config = {
   bracketSpacing: true,
   arrowParens: 'always',
   trailingComma: 'all',
+  printWidth: 100,
+  quoteProps: 'consistent',
 };
 
 module.exports = config;
