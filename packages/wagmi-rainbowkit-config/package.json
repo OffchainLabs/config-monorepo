@@ -11,21 +11,23 @@
   "author": "Offchain Labs, Inc.",
   "license": "MIT",
   "peerDependencies": {
-    "@rainbow-me/rainbowkit": "^0.12.9",
     "@types/react": "^18.0.38",
     "react": "^18.2.0",
+    "typescript": "^4.7.4",
     "wagmi": "^0.12.12"
   },
   "devDependencies": {
-    "@rainbow-me/rainbowkit": "^0.12.9",
     "@types/lodash.merge": "^4.6.7",
     "@types/react": "^18.0.38",
-    "lodash.merge": "^4.6.2",
     "react": "^18.2.0",
-    "typescript": "^5.0.4",
+    "typescript": "^4.7.4",
     "wagmi": "^0.12.12"
   },
   "scripts": {
     "build": "rm -r dist && tsc"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^0.12.9",
+    "lodash.merge": "^4.6.2"
   }
 }

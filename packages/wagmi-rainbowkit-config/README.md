@@ -15,6 +15,7 @@ npx install-peerdeps -Y --dev @offchainlabs/wagmi-rainbowkit-config
 const Providers = createWagmiRainbowKitProvider({
   appName: 'my awesome app', // required
   allowedChains: [mainnet, arbitrum, arbitrumNova], // optional
+  customProviders: [infuraProvider({ apiKey: 'yourInfuraApiKey' })], // optional
   customTheme: { // optional
     colors: {
       accentColor: "#1366C1",

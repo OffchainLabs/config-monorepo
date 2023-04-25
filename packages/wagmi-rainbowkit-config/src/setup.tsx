@@ -6,6 +6,7 @@ import {
   goerli,
   WagmiConfig,
   Chain,
+  ChainProviderFn,
 } from "wagmi";
 import { arbitrum, arbitrumGoerli } from "@wagmi/core/chains";
 import { publicProvider } from "wagmi/providers/public";
@@ -18,6 +19,10 @@ import {
 } from "@rainbow-me/rainbowkit";
 import { trustWallet, ledgerWallet } from "@rainbow-me/rainbowkit/wallets";
 import merge from "lodash.merge";
+import {
+  StaticJsonRpcProvider,
+  WebSocketProvider,
+} from "@ethersproject/providers";
 
 import { arbitrumNova } from "./arbitrumNova";
 
@@ -27,6 +32,7 @@ import { arbitrumNova } from "./arbitrumNova";
  *
  * @param appName - the name you want to show on wallets
  * @param allowedChains - `Chain[]` from wagmi; default: [mainnet, arbitrum, arbitrumNova, goerli, arbitrumGoerli]
+ * @param customProviders - add providers you'd like to use in addition to `publicProvider()`
  * @param customTheme - Override the dark theme from RainbowKit; default font family: 'Space Grotesk'
  *    https://www.rainbowkit.com/docs/custom-theme
  * @returns a RainbowKit Provider wrapped by `<WagmiConfig/>` which accepts `ReactNode` as children
@@ -34,15 +40,21 @@ import { arbitrumNova } from "./arbitrumNova";
 export function createWagmiRainbowKitProvider({
   appName,
   allowedChains = [mainnet, arbitrum, arbitrumNova, goerli, arbitrumGoerli],
+  customProviders,
   customTheme,
 }: {
   appName: string;
   allowedChains?: Chain[];
+  customProviders?: ChainProviderFn<
+    Chain,
+    StaticJsonRpcProvider,
+    WebSocketProvider
+  >[];
   customTheme?: Theme;
 }) {
   const { chains, provider, webSocketProvider } = configureChains(
     allowedChains,
-    [publicProvider()]
+    [merge(publicProvider(), customProviders)]
   );
 
   const theme = merge(
