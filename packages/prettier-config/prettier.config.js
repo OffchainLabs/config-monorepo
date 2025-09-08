@@ -8,8 +8,8 @@ const config = {
   trailingComma: 'all',
   printWidth: 100,
   quoteProps: 'consistent',
-  // Set next import (@/...) after third party imports but before relative imports
-  importOrder: ['^[./]', '^@/(.*)$'],
+  // @trivago/prettier-plugin-sort-imports options
+  importOrder: ["<THIRD_PARTY_MODULES>", "^@/(.*)$", "^[./]"],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
 };
