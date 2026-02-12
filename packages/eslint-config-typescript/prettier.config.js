@@ -1,3 +1,5 @@
-module.exports = {
-  ...require('@offchainlabs/prettier-config'),
+import prettierConfig from '@offchainlabs/prettier-config';
+
+export default {
+  ...prettierConfig,
 };
