@@ -1,3 +1,3 @@
-export { base } from './base';
-export { react } from './react';
-export { next } from './next';
+export { default as base } from './base.js';
+export { default as react } from './react.js';
+export { default as next } from './next.js';

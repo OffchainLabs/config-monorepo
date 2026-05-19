@@ -2,86 +2,42 @@
 
 Provide reusable typescript and react eslint configs
 
-1. Install the peerDependencies of eslint configs:
+This package ships flat ESLint configs for ESLint 9+.
 
-```sh
-npx install-peerdeps -Y --dev @offchainlabs/eslint-config-typescript
+## Install
+
+Install `@offchainlabs/eslint-config-typescript` and its peer dependencies.
+
+## Usage (Flat Config / ESM)
+
+`eslint.config.mjs`
+
+```js
+import base from '@offchainlabs/eslint-config-typescript/base';
+import react from '@offchainlabs/eslint-config-typescript/react';
+
+export default [...base, ...react];
 ```
 
-2. Usage
+For Next.js projects, use `next` instead of `react`.
 
-[Eslint docs](https://eslint.org/docs/latest/use/configure/configuration-files#using-a-shareable-configuration-package)
+```js
+import base from '@offchainlabs/eslint-config-typescript/base';
+import next from '@offchainlabs/eslint-config-typescript/next';
 
-`eslintrc.js`
-
-```ts
-require('@offchainlabs/eslint-config-typescript/base');
-require('@offchainlabs/eslint-config-typescript/react');
-
-module.exports = {
-  extends: [
-    '@offchainlabs/eslint-config-typescript/base',
-    '@offchainlabs/eslint-config-typescript/react',
-  ],
-  // Override here
-};
+export default [
+  ...base,
+  ...next,
+  {
+    settings: {
+      next: {
+        rootDir: 'packages/my-app/',
+      },
+    },
+  },
+];
 ```
 
-`.eslintrc.yaml`, `.eslintrc.yml`
+`rootDir` can be a path (relative or absolute), a glob (i.e. `packages/*`), or an array of paths and/or globs.
 
-```yaml
-extends:
-  - '@offchainlabs/eslint-config-typescript/base'
-  - '@offchainlabs/eslint-config-typescript/react'
-
-rules:
-  # Override here
-```
-
-`.eslintrc.json`
-
-```JSON
-{
-  extends: [
-    '@offchainlabs/eslint-config-typescript/base',
-    '@offchainlabs/eslint-config-typescript/react'
-  ],
-  overrides: [...]
-}
-```
-
-`package.json`
-
-```JSON
-"eslintConfig": {
-  "extends": [
-    "@offchainlabs/eslint-config-typescript/base",
-    "@offchainlabs/eslint-config-typescript/react",
-  ],
-  "overrides": [...]
-}
-```
-
-## Note
-
-For nextjs based project,
-`"@offchainlabs/eslint-config-typescript/react"` should be removed in favor of `"@offchainlabs/eslint-config-typescript/next",`. It includes `react`, `react-hooks`, `jsx-a11y` and `import` configurations already.
-
-If you're using `@offchainlabs/eslint-config-typescript/next` in a project where Next.js isn't installed in your root directory (such as a monorepo), you need to update your `.eslintrc`:
-
-```JSON
-{
-  "extends": "next",
-  "settings": {
-    "next": {
-      "rootDir": "packages/my-app/"
-    }
-  }
-}
-```
-
-`rootDir` can be a path (relative or absolute), a glob (i.e. "packages/\*/"), or an array of paths and/or globs.
-
-see https://nextjs.org/docs/basic-features/eslint#rootdir
-
-This repo can be linted with itself by running `yarn run lint`
+For legacy `.eslintrc` extends support, use the previous major release.
