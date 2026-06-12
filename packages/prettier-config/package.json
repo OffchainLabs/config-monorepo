@@ -8,6 +8,10 @@
     "url": "https://github.com/OffchainLabs/config-monorepo.git",
     "directory": "packages/prettier-config"
   },
+  "homepage": "https://github.com/OffchainLabs/config-monorepo/tree/main/packages/prettier-config#readme",
+  "bugs": {
+    "url": "https://github.com/OffchainLabs/config-monorepo/issues"
+  },
   "author": "Offchain Labs, Inc.",
   "license": "MIT",
   "peerDependencies": {
