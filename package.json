@@ -1,6 +1,14 @@
 {
   "name": "offchain-labs-config",
   "version": "1.0.0",
+  "homepage": "https://github.com/OffchainLabs/config-monorepo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OffchainLabs/config-monorepo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OffchainLabs/config-monorepo/issues"
+  },
   "private": true,
   "description": "Shareable Offchain labs eslint and prettier config",
   "main": "index.js",
