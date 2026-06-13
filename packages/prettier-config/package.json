@@ -1,6 +1,10 @@
 {
   "name": "@offchainlabs/prettier-config",
   "version": "0.3.0",
+  "homepage": "https://github.com/OffchainLabs/config-monorepo",
+  "bugs": {
+    "url": "https://github.com/OffchainLabs/config-monorepo/issues"
+  },
   "description": "Shareable Offchain labs prettier config",
   "main": "index.js",
   "repository": {
